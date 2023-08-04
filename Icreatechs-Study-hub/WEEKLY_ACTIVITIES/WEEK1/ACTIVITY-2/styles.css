@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --color-dark: #18182a;
+  --color-white: #fffcf2;
+
+  --fs-xl: 128px;
+  --fs-lg: 64px;
+  --fs-md: 32px;
+  --fs-base: 16px;
+  --fs-sm: 8px;
+}
+@media (min-width: 320px) {
+  :root {
+    --fs-xl: 64px;
+    --fs-lg: 32px;
+    --fs-md: 16px;
+    --fs-base: 8px;
+    --fs-sm: 4px;
+  }
+}
+@media (min-width: 425px) {
+  :root {
+    --fs-xl: 76px;
+    --fs-lg: 38px;
+    --fs-md: 19px;
+    --fs-base: 9px;
+    --fs-sm: 4px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --fs-xl: 89px;
+    --fs-lg: 44px;
+    --fs-md: 22px;
+    --fs-base: 11px;
+    --fs-sm: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --fs-xl: 102px;
+    --fs-lg: 51px;
+    --fs-md: 25px;
+    --fs-base: 12px;
+    --fs-sm: 6px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1366px) {
+  :root {
+    --fs-xl: 115px;
+    --fs-lg: 57px;
+    --fs-md: 28px;
+    --fs-base: 14px;
+    --fs-sm: 7px;
+  }
+}
+@media (min-width: 1600px) {
+  :root {
+    --fs-xl: 140px;
+    --fs-lg: 70px;
+    --fs-md: 35px;
+    --fs-base: 18px;
+    --fs-sm: 10px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  font-weight: 400;
+}
+
+input,
+label,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea {
+  border-radius: 4px;
+  background-color: #ffffffca;
+}
+
+label,
+input:last-child {
+  margin-top: 20px;
+}
+
+input {
+  height: 32px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  font-size: var(--fs-base);
+  font-family: "Ubuntu", sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  line-height: 1.2;
+  overflow-x: hidden;
+  padding: 2rem 0;
+}
+
+.debug {
+  border: 1px solid black;
+}
+
+.container {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 64px;
+
+  padding: 32px;
+}
+
+.container__form {
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid #b6febd;
+  box-shadow: 0 0 10px #b6febd;
+}
+
+.container__text {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.container > div > form > input:last-child {
+  color: #4e594f;
+  font-size: var(--fs-base);
+  font-weight: 600;
+  background-color: #7cf188;
+  border: 1px solid #b6febd;
+  box-shadow: 0 0 5px #b6febd;
+}
+
+.container__form--radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+}
+
+.container__form--radio > input {
+  width: 50px;
+  height: 50px;
+}
+.container__form--radio > label {
+  padding-bottom: 20px;
+}
+
+.container__form--ckecked-box-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+}
+.container__form--ckecked-box-flex > input {
+  width: 50px;
+  height: 50px;
+}
+.container__form--ckecked-box-flex > label {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+  .container {
+    padding: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 64px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}

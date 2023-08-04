@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML FORM ASSIGNMENT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__form">
+        <h1 class="container__text">Contact Us</h1>
+        <form action="#" method="POST">
+          <label for="cname"> Name: </label>
+          <input type="text" id="cname" required />
+
+          <label for="cemail">Email:</label>
+          <input type="email" id="cemail" required />
+
+          <label for="cmessage"> Message: </label>
+          <textarea
+            name="cname"
+            id="cname"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+
+          <input type="submit" name="submit" id="csubmit" value="Submit" />
+        </form>
+      </div>
+      <div class="container__form debug">
+        <h1 class="container__text">Login</h1>
+        <form action="#" method="POST">
+          <label for="lusername"> Username: </label>
+          <input type="text" id="lusername" required />
+
+          <label for="lpassword">Password:</label>
+          <input type="password" id="lpassword" required />
+          <input type="submit" name="lsubmit" id="lsubmit" value="Login" />
+        </form>
+      </div>
+      <div class="container__form debug">
+        <h1 class="container__text">Survey</h1>
+        <form action="#" method="POST">
+          <label for="sname"> Name: </label>
+          <input type="text" id="sname" required />
+
+          <label for="sage">Age:</label>
+          <input type="number" id="sage" required />
+
+          <div class="container__form--radio">
+            <input
+              name="foo"
+              type="radio"
+              id="sgender_male"
+              value="male"
+              checked
+            />
+            <label for="sgender_male">Male:</label>
+            <input name="foo" type="radio" id="sgender_female" value="female" />
+            <label for="sgender_female">Female:</label>
+          </div>
+
+          <div class="container__form--ckecked-box">
+            <label for="language">Which programming language do you know</label>
+            <div class="container__form--ckecked-box-flex">
+              <input
+                type="checkbox"
+                name="javascrip"
+                id=""
+                value="javascript"
+              />
+              <label for="language">Javascript</label>
+              <input type="checkbox" name="python" id="" value="python" />
+              <label for="language">Python</label>
+              <input type="checkbox" name="c#" id="" value="c#" />
+              <label for="language">C#</label>
+            </div>
+          </div>
+
+          <input type="submit" name="lsubmit" id="lsubmit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
